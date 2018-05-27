@@ -1,5 +1,3 @@
-<header>
-
   <!-- Navigation -->
   <nav class="nav-top">
     <div class="Menu">
@@ -19,8 +17,9 @@
         </li>
           <input class="inputSearch" type="text" placeholder="Search" aria-label="Search">
           <button class="btnSearch" type="submit" >Search</button>
-          <button class="btnConnexion" type="submit" >connexion</button>
+          <li>
+            <a href="/connexion">CONNEXION</a>
+          </li>
       </ul>
     </div>
   </nav>
-</header>

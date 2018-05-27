@@ -26,3 +26,11 @@ Route::get('/contact', function () {
 Route::get('/moncompte', function () {
     return view('moncompte');
 });
+
+Route::get('/connexion', function () {
+    return view('connexion');
+});
+
+Route::get('/creercompte', function () {
+    return view('creercompte');
+});

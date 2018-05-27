@@ -24,6 +24,9 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+
+
+/*NAV BAR*/
 .nav-top{
 	position: fixed;
 	display: block;
@@ -31,14 +34,13 @@ body {
 	width: 100%;
 	height: auto;
 	box-shadow: 0px 5px 10px #001;
+	z-index: 3;
 }
-
 .Menu ul {
 	padding: 0px;
 	margin: 0px ;
 /*	text-align: center; */
 }
-
 .Menu ul li {
 	display: inline-block;
 	width : 130px;
@@ -46,17 +48,14 @@ body {
 	padding-top : 18px;
 	text-align : center;
 }
-
 .Menu ul li a {
 	color: white;
 	text-decoration: none;
   font-weight: bold;
 }
-
 .Menu ul li:hover {
 	background-color: black ;
 }
-
 .inputSearch{
   display: inline-block;
   text-align : left;
@@ -64,36 +63,177 @@ body {
   margin-left: 5px;
 	border-radius: 5px;
 }
-
 .btnSearch{
 	border-radius: 3px;
 	-webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 	border-style: none;
 }
-
 .btnSearch:hover{
 	background-color: grey;
 	color : white;
 }
 
-.btnConnexion{
-	height: 25px;
+
+/*FRONT PAGE*/
+
+.frontPage{
+	background-image: url("../img/party2.jpg");
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items : center;
+}
+.logo{
+	width: 500px;
+	height: auto;
+	margin-top: 200px;
+}
+.hvr-grow {
   display: inline-block;
-	text-align : center;
-  margin-left: 20px;
-  margin-bottom: 16px;
-	border-radius: 3px;
-	border-style:none;
-	-webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.arrow{
+	height: auto;
+	width: 50px;
+	margin-top :200px;
+}
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
 }
 
-.btnConnexion:hover{
-	background-color: black;
-	color: white;
+/* CONTACT */
+.contactContent{
+	height: 78vh;
+	display: flex;
+  flex-direction:column;
+	justify-content:center;
+	align-items : center;
+	text-align: center;
+}
+h2{
+	color :black;
+	font-size: 20px;
+		font-family:  "Raleway", sans-serif;
+}
+p{
+	font-size: 14px;
+	font-family : Arial;
+}
+.inputContactEmailNom{
+	width: 300px;
+	font-family:  "Raleway", sans-serif;
+	margin-top: 8px;
+	border-radius: 8px;
+}
+.inputContactMsg{
+	height: 80px;
+	font-family:  "Raleway", sans-serif;
+	width: 300px;
+	margin-top: 8px;
+	border-radius: 8px;
+}
+.btnEnvoyer{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
 }
 
+
+/*CONNEXION*/
+
+.connexionContent{
+	height: 78vh;
+	display: flex;
+  flex-direction:column;
+	justify-content:center;
+	align-items : center;
+	text-align: center;
+}
+.logoConnexion{
+	width: 200px;
+	height: auto;
+}
+.inputEmailConnexion{
+	margin-top: 40px;
+	border-style: outset;
+	border-radius: 5px;
+	width: 300px;
+}
+.inputMdpConnexion{
+	margin-top: 10px;
+	border-style: outset;
+	border-radius: 5px;
+	width: 300px;
+}
+.createAccountLink{
+	margin-top: 14px;
+	font-size: 14px;
+	color: black;
+}
+.btnConnexion{
+	margin-top: 8px;
+	border-radius: 10px;
+	font-weight: bold;
+	border-style: solid;
+	border-color: grey;
+	font-family:  "Raleway", sans-serif;
+}
+
+/* CREER UN COMPTE*/
+.separateur{
+	 	height: 100px;
+		width: auto;
+}
+.createAccountContent {
+	box-shadow : 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2) ;
+display: block;
+margin-top : 0px;
+margin-bottom : 30px;
+padding-bottom : 0px;
+padding-left : 5px;
+padding-right : 5px;
+padding-top : 20px;
+padding-bottom: 20px;
+width: 80%	;
+height: auto;
+text-align: justify;
+text-justify: auto;
+margin-left: auto;
+margin-right: auto;
+color: #727888;
+}
+
+
+/*FOOTER*/
 footer.separate {
 	border-color : white ;
 	border-width : 3px;
@@ -107,7 +247,7 @@ footer.separate {
 
 footer {
 	display : block;
-	background-color: #2C3E50;
+	background-color: rgb(50, 50, 53);
 	margin: auto;
 	box-shadow: 0px -5px 10px #aaa;
 	padding-top : 0px;

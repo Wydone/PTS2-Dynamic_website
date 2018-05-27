@@ -6,7 +6,10 @@
       <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
+      <header>
       @include('inc.navbar')
+      @yield('frontPage')
+      </header>
       @yield('content')
 
       @include('inc.footer')
