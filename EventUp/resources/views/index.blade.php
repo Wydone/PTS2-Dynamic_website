@@ -9,7 +9,25 @@
 
 @section('content')
   <div id="content">
-  	<img class="ico-fb"  src="/img/facebook.png" alt="facebook icon">
+
+    <h5>ACTUALITES</h5>
+    <div class="eventAnnonceContent">
+      <h2> Title ......</h2>
+        <p> Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.</p>
+        <button class="btnEnSavoirPlus" type="submit" >En savoir plus</button>
+    </div>
+
+    <div class="eventAnnonceContent">
+      <h2> Title ......</h2>
+        <p> Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.</p>
+        <button class="btnEnSavoirPlus" type="submit" >En savoir plus</button>
+    </div>
+
+    <div class="eventAnnonceContent">
+      <h2> Title ......</h2>
+        <p> Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.</p>
+        <button class="btnEnSavoirPlus" type="submit" >En savoir plus</button>
+    </div>
   </div>
 
 @endsection

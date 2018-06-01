@@ -34,3 +34,9 @@ Route::get('/connexion', function () {
 Route::get('/creercompte', function () {
     return view('creercompte');
 });
+
+Route::get('/creerunevent', function() {
+    return view('creerunevent');
+});
+
+Route::post('/contact', 'MessagesController@submit');
