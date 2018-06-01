@@ -1,11 +1,11 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 
   <img class"separateur" src="img/separator.png" width="100" height="80">
 
 <div class="createEvent">
-  <form action="/creercompte" method="post">
+  <form action="/creerunevent" method="post">
     {{ csrf_field() }}
 
     <h3>CREER UN EVENEMENT</h3><br>
